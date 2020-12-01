@@ -57,3 +57,6 @@ As a result, we received a single .NET cross-platform AnyCPU-program with calls 
 ## NuGet
 
 You can install the library via NuGet: [https://www.nuget.org/packages/ColinChang.InteropNet](https://www.nuget.org/packages/ColinChang.InteropNet)
+
+## Thanks
+https://github.com/AndreyAkinshin/InteropDotNet
