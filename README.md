@@ -69,7 +69,9 @@ Ubuntu | `/usr/lib/x86_64-linux-gnu/libdl.so.2`,`/usr/lib64/ld-linux-x86-64.so.2
 
 ## NuGet
 
-You can install the library via NuGet: [https://www.nuget.org/packages/ColinChang.InteropNet](https://www.nuget.org/packages/ColinChang.InteropNet)
+You can install the library via NuGet.
+ 
+[https://www.nuget.org/packages/ColinChang.InteropNet](https://www.nuget.org/packages/ColinChang.InteropNet)
 
 ## Thanks
 https://github.com/AndreyAkinshin/InteropDotNet

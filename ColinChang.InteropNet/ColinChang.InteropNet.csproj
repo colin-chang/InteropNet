@@ -11,9 +11,9 @@
         <RepositoryType>Git</RepositoryType>
         <PackageTags>DllImport,linux,runtime,c/c++,library,x64,x86,InteropDotNet</PackageTags>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageReleaseNotes>translate it to netstandard2.1</PackageReleaseNotes>
+        <PackageReleaseNotes>update the name of libdl.so to libdl.so.2</PackageReleaseNotes>
         <PackageIcon>icon.png</PackageIcon>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Title>InteropNet</Title>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageLicense>https://raw.githubusercontent.com/colin-chang/InteropNet/main/LICENSE</PackageLicense>
