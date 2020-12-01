@@ -54,6 +54,19 @@ In the program, we declared interface `INative` with signatures of the target na
 
 As a result, we received a single .NET cross-platform AnyCPU-program with calls of native methods because of the `LibraryLoader` class loaded handles for specific user environment.
 
+## Platform
+Only Windows and Linux(CentOS 8,Debian 9,Ubuntu 20.04 are tested) are supported.
+
+**We use libdl.so.2 to load library(*.so), it means some Linux release version like alpine doesn't support it.**
+
+the libdl.so.2 file is a library in most of Linux. Generally,it's in a system path configured in system environment variables.
+
+OS | Path
+:-|:-
+CentOS | `/usr/lib64/libdl.so.2`
+Debian | `/lib/x86_64-linux-gnu/libdl.so.2`
+Ubuntu | `/usr/lib/x86_64-linux-gnu/libdl.so.2`,`/usr/lib64/ld-linux-x86-64.so.2`
+
 ## NuGet
 
 You can install the library via NuGet: [https://www.nuget.org/packages/ColinChang.InteropNet](https://www.nuget.org/packages/ColinChang.InteropNet)
