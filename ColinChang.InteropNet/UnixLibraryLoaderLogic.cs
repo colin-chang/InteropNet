@@ -62,16 +62,16 @@ namespace ColinChang.InteropNet
 
         private const int RtldNow = 2;
 
-        [DllImport("libdl.so", EntryPoint = "dlopen")]
+        [DllImport("libdl.so.2", EntryPoint = "dlopen")]
         private static extern IntPtr UnixLoadLibrary(string fileName, int flags);
 
-        [DllImport("libdl.so", EntryPoint = "dlclose", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        [DllImport("libdl.so.2", EntryPoint = "dlclose", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
         private static extern int UnixFreeLibrary(IntPtr handle);
 
-        [DllImport("libdl.so", EntryPoint = "dlsym", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        [DllImport("libdl.so.2", EntryPoint = "dlsym", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
         private static extern IntPtr UnixGetProcAddress(IntPtr handle, string symbol);
 
-        [DllImport("libdl.so", EntryPoint = "dlerror", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        [DllImport("libdl.so.2", EntryPoint = "dlerror", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
         private static extern IntPtr UnixGetLastError();
     }
 }
