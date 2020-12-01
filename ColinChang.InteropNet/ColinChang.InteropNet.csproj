@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>default</LangVersion>
+        <Authors>Colin Chang</Authors>
+        <Description>The library allows you to work with native libraries with netstandard2.1. Standard approach with the DllImport attribute may be inconvenient if you want to build AnyCPU assembly with MS.NET/Mono support. The Interoptor class can generate implementation of interface with target signatures of native methods.</Description>
+        <Copyright>https://ccstudio.org</Copyright>
+        <PackageProjectUrl>https://github.com/colin-chang/InteropNet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/colin-chang/InteropNet</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>DllImport,linux,runtime,c/c++,library,x64,x86,InteropDotNet</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReleaseNotes>translate it to netstandard2.1</PackageReleaseNotes>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Title>InteropNet</Title>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicense>https://raw.githubusercontent.com/colin-chang/InteropNet/main/LICENSE</PackageLicense>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="../icon.png" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>
